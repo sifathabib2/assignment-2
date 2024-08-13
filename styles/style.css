@@ -63,6 +63,7 @@
     background-color: rgb(230, 83, 60);
     color: white;
     padding: 10px 40px;
+    border: none;
 }
 .btnd{
     font-weight: 600;
@@ -101,7 +102,7 @@ background: rgb(34, 34, 34);
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-margin: 20px auto;
+margin: 40px auto;
 }
 .sec-2-img{
     width: 360px;
@@ -109,6 +110,46 @@ margin: 20px auto;
     border-radius: 20px;
     margin: 20px;
 
+}
+.BMI{
+    width: 671px;
+    height: 120px; 
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 120px auto; 
+ 
+}
+.BMI-calculate{
+    width: 1440px;
+height: 450px;
+background-color: rgb(34, 34, 34);
+margin: 50px auto;
+display: flex;
+justify-content: space-around;
+
+}
+.table, th,td{
+    border-collapse: collapse;
+    border: 1px solid rgba(126, 119, 119, 0.178);
+    padding: 15px 10px;   
+    color: rgba(255, 255, 255, 0.5);
+}
+.table{
+    width: 350px;
+    height: 220px;
+}
+.th{
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.904);
+}
+.input{
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.349);
+    padding: 12px 40px 12px 20px;
+    border: none;
 }
 @media screen and (max-width: 576px) {
     .navber, .banner{
@@ -126,6 +167,16 @@ margin: 20px auto;
         width: 400px;
         height: 700px;
         grid-template-columns: repeat(1, 1fr);   
+    }
+    .BMI{
+        width: 400px;
+    }
+    
+    .BMI-calculate{
+        display: grid;
+        width: 400px;
+        height: 800px;
+        grid-template-columns: repeat(1,1fr);
     }
     
 }
