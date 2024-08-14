@@ -9,18 +9,24 @@
     background-color: black;
     color: white;
   }
-/* .header{
-    width: 1400px;
-    height: 750px;
-    margin: 20px auto;
-} */
 .navber{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+   width: 1200px;
     margin: 0 auto;
 
+}
+.ul{
+    width: 20px; 
+    display: flex; 
+    padding-right: 325px; 
+    padding-left: 5px; 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 39px;
+}
+.bar{
+    display: none;
 }
 .nav-item{
     list-style: none;
@@ -33,7 +39,7 @@
     color: rgba(255, 255, 255, 0.685)
 }
 .nav-head{
-    font-weight: 800;
+    font-weight: 900;
     font-size: 2.25rem;
     color: rgb(230, 83, 60);
 }
@@ -50,6 +56,7 @@
     margin: 0 auto;
     max-width: 1200px;
     display: flex;
+    gap: 150px;
 }
 .banner-subtitle{
     font-weight: 400;
@@ -117,7 +124,7 @@ margin: 40px auto;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin: 120px auto; 
+    margin: 150px auto; 
  
 }
 .BMI-calculate{
@@ -151,9 +158,68 @@ background: rgba(255, 255, 255, 0.1);
     padding: 12px 40px 12px 20px;
     border: none;
 }
+.trainer{
+    width: 1200px;
+height: 704px;
+border-radius: 18px;
+background: rgba(255, 255, 255, 0.1);
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+position: relative;
+
+}
+.trainer-img{
+    width: 85%;
+height: 75%;
+margin: 20px 10px;
+border-radius: 18px;
+}
+.text{
+    position: absolute;
+    padding: 20px;   
+}
+.foot{
+    background: rgba(255, 255, 255, 0.1);
+    width: 1440px;
+    height: 489px;
+    margin: 50px auto;
+}
+.footer{   
+display: flex;
+justify-content: space-around;
+}
+.footer-heading{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.footer-text{
+    font-weight: 400;
+    font-size: 1.44rem;
+    color: rgba(255, 255, 255, 0.349);
+}
+.hr{
+    width: 1150px;
+    padding-left: 150px;
+   
+    
+}
 @media screen and (max-width: 576px) {
+    .hm, .nav-link{
+        display: none;
+    }
+    .ul{
+        border: none;
+    }
+    .bar{
+        display: block;    
+    }
+    .header{
+        max-width: 400px;
+    }
     .navber, .banner{
         display: grid;
+        gap: 0;
         grid-template-columns: repeat(1, 1fr);
     }
     .section-1,.sec-1{
@@ -177,6 +243,28 @@ background: rgba(255, 255, 255, 0.1);
         width: 400px;
         height: 800px;
         grid-template-columns: repeat(1,1fr);
+    }
+    .trainer-1, .trainer-4{
+        display: none;
+    }
+    .trainer{
+        width: 400px;
+        height: 1400px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .foot{
+        width: 400px;
+        height: 1150px;
+        padding: 10px;
+    }
+    .hr{
+        width: 350px;
+        padding-left: 20px;
+    }
+    .foot, .footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
     
 }
